@@ -16,19 +16,19 @@ El juego permite mover la serpiente hacia arriba, abajo, izquierda o derecha y g
 2) Detectar colisiones con paredes o consigo misma
 3) Mostrar mensaje de Game Over
 
-### Características
+## Características
 - Conexión UART entre MSP430 y la interfaz Java.
 - Control físico mediante botones en la placa.
 - Interfaz gráfica con colores diferenciados para cabeza, cuerpo y manzanas.
 - Generación aleatoria de manzanas.
 - Compatible con control por teclado en caso de no tener el MSP430.
 
-### Tecnologías
+## Tecnologías
 - MSP430: C
 - Java: Swing para la interfaz gráfica
 - Serial Communication: jSerialComm
 
-### ¿Cómo usarlo?
+## ¿Cómo usarlo?
 
 · Hardware:
 1) Conectar botones a los pines configurados en el MSP430.
