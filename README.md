@@ -1,61 +1,60 @@
 # Snake Controller by MSP430
 
-
 <img width="1536" height="1024" alt="dcc8fc58-3d25-4349-a748-4e5a24633067" src="https://github.com/user-attachments/assets/9072666a-2970-4ad2-9bb1-f8e9020fc3bd" />
 
 ¡Welcome to a Snake Controlled by MSP430! 🐍🎮
-Este proyecto combina hardware y software para crear una experiencia interactiva del clásico juego Snake, donde un microcontrolador MSP430 actúa como mando, y una interfaz en Java muestra el juego en pantalla.
+This project combines hardware and software to create an interactive experience of the clasic Snake game, where an MSP430 microcontroller acts as a controller,and a Java interfaces displays the game on screen.
 
-## Descripción
+## Description
 
-El proyecto consiste en:
-1) Hardware: Una placa MSP430 que funciona como control remoto mediante botones físicos. Cada botón envía comandos a través de UART.
-2) Software: Una interfaz en Java que recibe los comandos del MSP430 y actualiza el juego Snake en tiempo real.
-3) Pantalla LCD en MSP430: Visualiza información básica como puntuación y estado del juego.
+The projects consists of:
+1) Hardware: An MSP430 board acting as remote control using physical buttoms. Each buttom sends commads vía UART.
+2) Software: A Java interface which receives the commands from MPS430 and updates the Snake game in real time.
+3) Screen LCD on MSP430: Displays basic information such as score and game state.
 
-El juego permite mover la serpiente hacia arriba, abajo, izquierda o derecha y gestionar eventos como:
+The game allows move the snake up, down, left, or right and handles events like:
+- Eating apples
+- Detecting collisions with walls or itself
+- Displaying a Game Over message
 
-1) Comer manzanas
-2) Detectar colisiones con paredes o consigo misma
-3) Mostrar mensaje de Game Over
+## Festures
+- Conection UART between MSP430 and Java interface.
+- Physical control via buttons on the boards.
+- Graphical interface with different colors for the head, body, and apples.
+- Random apple generation.
+- Keyboard control available if MSP430 is not used.
 
-## Características
-- Conexión UART entre MSP430 y la interfaz Java.
-- Control físico mediante botones en la placa.
-- Interfaz gráfica con colores diferenciados para cabeza, cuerpo y manzanas.
-- Generación aleatoria de manzanas.
-- Compatible con control por teclado en caso de no tener el MSP430.
-
-## Tecnologías
+## Technologies
 - MSP430: C
-- Java: Swing para la interfaz gráfica
+- Java: Swing for GUI
 - Serial Communication: jSerialComm
 
-## ¿Cómo usarlo?
+## ¿How to Use?
 
 · Hardware:
-1) Conectar botones a los pines configurados en el MSP430.
-2) Compilar y cargar el código en el MSP430.
-3) Asegurarse de que la comunicación UART esté funcionando.
-
+1) Connect the buttons to the configurated pins on the MSP430.
+2) Compile and upload the coide on the MSP430.
+3) Ensure the UART communication is working.
+   
 · Software:
-1) Abrir el proyecto Java y compilarlo.
-2) Conectar el MSP430 al PC.
-3) Ejecutar VentanaPrincipal.java.
+1) Open the Java project and compile it.
+2) Connect the MPS430 board to PC.
+3) Execute VentanaPrincipal.java.
 
-La serpiente se moverá según los botones presionados en la placa.
+The snake will move according to the buttoms pressed on the board.
 
-Control por teclado (opcional):
-Flechas del teclado para mover la serpiente si no se usa la placa.
+Keyboard control (optional):
+Use the arrow keys to move the snake if the MSP430 is not connected.
 
-## Estructura del Proyecto
+## Project Structure
 /MSP430
-    main.c       # Código del microcontrolador
+    main.c           # Microcontroller code
 /Java
-    VentanaPrincipal.java  # Interfaz gráfica del juego
-    Bucle.java             # Lógica del temporizador
-    Posicion.java          # Clase para la posición de la serpiente
-    DIRECCION.java         # Enum de direcciones
+    VentanaPrincipal.java  # Graphical interface
+    Bucle.java             # Timer logic
+    Posicion.java          # Snake position class
+    DIRECCION.java         # Direction enum
+
 
 ## Autor
 Lucía Martínez Martínez
