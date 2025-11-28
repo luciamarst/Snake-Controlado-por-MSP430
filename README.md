@@ -18,7 +18,7 @@ The game allows move the snake up, down, left, or right and handles events like:
 - Detecting collisions with walls or itself
 - Displaying a Game Over message
 
-## Festures
+## Features
 - Conection UART between MSP430 and Java interface.
 - Physical control via buttons on the boards.
 - Graphical interface with different colors for the head, body, and apples.
