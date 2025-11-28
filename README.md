@@ -51,12 +51,12 @@ Use the arrow keys to move the snake if the MSP430 is not connected.
 
 ```
 /MSP430
-main.c # Microcontroller code
+   main.c # Microcontroller code
 /Java
-VentanaPrincipal.java # Graphical interface
-Bucle.java # Timer logic
-Posicion.java # Snake position class
-DIRECCION.java # Direction enum
+   VentanaPrincipal.java # Graphical interface
+   Bucle.java # Timer logic
+   Posicion.java # Snake position class
+   DIRECCION.java # Direction enum
 ```
 
 ## Author
